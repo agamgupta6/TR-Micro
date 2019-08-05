@@ -1,0 +1,860 @@
+{
+    "name": "Product",
+    "fields": [
+        {
+            "fieldName": "idProduto",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "codRecipiente",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tpEmbalagem",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cnpj",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idDispositivo",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "unidadeEstoque",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "naladincca",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ncm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "naladish",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "linhaProduto",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pesoBruto",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pesoLiquido",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "registroMs",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "validade",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "necessitaLi",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "recof",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "reducaoIcms",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "codOnu",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "seqSuframa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "naoTributavel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ipiEspecifico",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "iiEspecifico",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ii",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "ipi",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "valorUnitaria",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "capacidadeUnitaria",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "fatorConversao",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "descricaoResumida",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "atualizacao",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "unidadePeso",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codUnidadeQtde",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codUnidadeComercializada",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codUnidadeUnitaria",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pesoQuilo",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pesoUnidComercializada",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "codExternoGip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ultimoInformante",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "tsp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipoRecof",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "obs",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pesoRateavel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "necessitaRevisao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipoProduto",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "procedencia",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "chassi",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "especificacaoTecnica",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "materiaPrimaBasica",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "automatico",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codOrigem",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "materialGenerico",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cargaPerigosa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codUnidadeVenda",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descricaoDetalhada",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idOrganizacao",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "codPaisOrigem",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cicloProdutivo",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "partNumberFornecedor",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flagAtualizaIcms",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idDispositivoIpi",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "codigoMoeda",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "valorUnitario",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "codProd",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codProducao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "procedenciaExp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idAnuencia",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pesoMetroCubico",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "hts",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nomeComercial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idModelo",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "unidadeFracionada",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "difPesoEmb",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "classProdRecof",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataInicio",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dataFim",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dataInsertMov",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "idCorporativo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataGerLeg",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "procedenciaInfo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codProdSuframa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pxExpTipoins",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipoProdSuframa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "idDetalheSuframa",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "valorUnitarioReal",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "necessitaRevisaoPexpam",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modelo",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pxModeloPadrao",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "flexField4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField6",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField7",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField8",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField9",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField10",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField11",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pisCofinsTipoAplic",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pis",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "cofins",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pisCofinsRedBase",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "modeloProdSuframa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codSiscomexUnidadeNcm",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partNumberCliente",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "superficieUnitaria",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "localEstoque",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codUnidadeSuperficie",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rateioProdutoAcabado",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pisCofinsCodUnEspec",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "recuperaImpostos",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flagNoRaf",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notaComplTipi",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ipiReduzido",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sujeitoLote",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "marcaComercial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipoEmbalagem",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "numLiberacaoBrasilia",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "temperaturaConservacao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "umidade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "luminosidade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "embalagemSecundaria",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "formaFisica",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "finalidade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "itemProdutivoRc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "embalagemPrimaria",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descricaoAnvisa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "volume",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "codUnidadeMedidaDimensao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codMaterial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ativo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codigoAduana",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "classeRisco",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codRisco",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField12",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField13",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField1Number",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "flexField2Number",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "flexField3Number",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "flexField4Number",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "flexField5Number",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "statusScansys",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codEstruturaAtual",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "percTolerancia",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "pisEspecifico",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cofinsEspecifico",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField14",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField15",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField16",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField17",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField18",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField19",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField20",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField21",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField22",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField23",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField24",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField25",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField26",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField27",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField28",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField29",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField30",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField31",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField32",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "flexField33",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sCodBarrasGtin",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nVlrUnitLimiteUsd",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nCodProdAnp",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nCustoProducao",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sDestino",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nPercentualGlp",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField1",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField2",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField3",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField4",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField5",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField6",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField7",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nLocField8",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sLocField1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nIdDocOcr",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sLocField6",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField7",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField8",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField9",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField10",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField11",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField12",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField13",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField14",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sLocField15",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sCodProdAnvisa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sDescProdAnp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nPercGlpNac",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nPercGlpImp",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "nValorPartida",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sGtinUnidTrib",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sCodigoModalidade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sCodigogpc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sCodigogpcbrick",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sCodigounspsc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sSituacao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sEnviado",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sMotivoIsencaoAnvisa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sIcProntoParaEnvio",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190805165206",
+    "entityTableName": "product",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "productManagement",
+    "applications": "*",
+    "microserviceName": "productManagement"
+}
