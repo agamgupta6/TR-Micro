@@ -61,6 +61,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .and()
             .apply(securityConfigurerAdapter());
         // @formatter:on
+        
+        http.headers().frameOptions().sameOrigin();
+        http.csrf().ignoringAntMatchers("/h2-console/**");
+        http.authorizeRequests().antMatchers("/h2-console/**").permitAll();
     }
 
     private JWTConfigurer securityConfigurerAdapter() {
