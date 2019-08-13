@@ -11,6 +11,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -2432,8 +2434,8 @@ public class ProductResourceIT {
     public void searchProduct() throws Exception {
         // Initialize the database
         productRepository.saveAndFlush(product);
-        when(mockProductSearchRepository.search(queryStringQuery("id:" + product.getId())))
-            .thenReturn(Collections.singletonList(product));
+        when(mockProductSearchRepository.search(queryStringQuery("id:" + product.getId()), PageRequest.of(0, 20)))
+            .thenReturn(new PageImpl<>(Collections.singletonList(product), PageRequest.of(0, 1), 1));
         // Search the product
         restProductMockMvc.perform(get("/api/_search/products?query=id:" + product.getId()))
             .andExpect(status().isOk())

@@ -6,10 +6,16 @@ import com.tcs.product.repository.search.ProductSearchRepository;
 import com.tcs.product.web.rest.errors.BadRequestAlertException;
 
 import io.github.jhipster.web.util.HeaderUtil;
+import io.github.jhipster.web.util.PaginationUtil;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -92,12 +98,16 @@ public class ProductResource {
      * {@code GET  /products} : get all the products.
      *
 
+     * @param pageable the pagination information.
+
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of products in body.
      */
     @GetMapping("/products")
-    public List<Product> getAllProducts() {
-        log.debug("REST request to get all Products");
-        return productRepository.findAll();
+    public ResponseEntity<List<Product>> getAllProducts(Pageable pageable) {
+        log.debug("REST request to get a page of Products");
+        Page<Product> page = productRepository.findAll(pageable);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(ServletUriComponentsBuilder.fromCurrentRequest(), page);
+        return ResponseEntity.ok().headers(headers).body(page.getContent());
     }
 
     /**
@@ -132,14 +142,15 @@ public class ProductResource {
      * to the query.
      *
      * @param query the query of the product search.
+     * @param pageable the pagination information.
      * @return the result of the search.
      */
     @GetMapping("/_search/products")
-    public List<Product> searchProducts(@RequestParam String query) {
-        log.debug("REST request to search Products for query {}", query);
-        return StreamSupport
-            .stream(productSearchRepository.search(queryStringQuery(query)).spliterator(), false)
-            .collect(Collectors.toList());
+    public ResponseEntity<List<Product>> searchProducts(@RequestParam String query, Pageable pageable) {
+        log.debug("REST request to search for a page of Products for query {}", query);
+        Page<Product> page = productSearchRepository.search(queryStringQuery(query), pageable);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(ServletUriComponentsBuilder.fromCurrentRequest(), page);
+        return ResponseEntity.ok().headers(headers).body(page.getContent());
     }
 
 }
